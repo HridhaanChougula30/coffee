@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit);
+}
+
+@layer base {
+  :root {
+    --product-gradient: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
+  }
+
+  body {
+    background: var(--product-gradient);
+    transition: background 0.8s ease-in-out;
+    color: white;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::-moz-selection {
+    background: #f97316;
+    color: white;
+  }
+
+  ::selection {
+    background: #f97316;
+    color: white;
+  }
+}
